@@ -31,14 +31,6 @@ git clone https://github.com/mekameka2020/robot-system2020.git
 
 2.
 ```sh
-cd led 
-```
-と打ち込む
-
-➝myled.cやMakefileを操作するために必要な工程です。
-
-3.
-```sh
 make
 ```
 と打ち込む
@@ -51,7 +43,7 @@ make
 ```
 という表示があった場合は、Makefile内のスペースをTabに変更すること。
 
-4.
+3.
 
 ```sh
 sudo insmod myled.ko
@@ -70,7 +62,7 @@ make clean　
 ```
 ➝カーネルモジュールの消去
 
-5.
+4.
 ```sh
 sudo chmod 666 /dev/myled0
 ```
@@ -94,9 +86,9 @@ echo 2 < /dev/myled0
 
 3. 
 ```sh
-echo 1 < /dev/myled0 
+echo 3 < /dev/myled0 
 ```
-と打ち込むと黄色LEDが点灯
+と打ち込むと緑色LEDが点灯
 
 4. 
 ```sh
